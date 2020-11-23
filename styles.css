@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    background-image: url('./Images/backgroundimg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    text-align: center;
+}
+.header, .footer{
+    color: whitesmoke;
+    margin-top: 45px;
+    font-style: italic;
+}
+#description {
+    font-weight: 400;
+    text-align: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.178);
+    margin: 3.125rem auto 0 auto;
+    border-radius: 10px;
+}
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+.form-group{
+    text-align: center;
+}
+.form{
+    margin: 1rem 0;
+}
+label, p{
+    display: block;
+    text-align: left;
+    margin: 0 1rem;
+}
+.form-edit {
+    width: calc(100% - 2rem);
+}
+
+.form-edit:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.input-radio,
+.input-checkbox {
+    display: inline-block;
+    margin-right: 0.625rem;
+    min-height: 1.25rem;
+    min-width: 1.25rem;
+}
+
+.input-textarea {
+    min-height: 120px;
+    width: calc(100% - 2rem);;
+    padding: 0.625rem;
+    resize: vertical;
+    border-radius: 3px;
+    outline: none;
+}
+
+.submit-button {
+    width: 95%;
+    padding: 0.75rem;
+    margin-top: 1.5rem;
+    background-color: rgb(51, 139, 51);
+    color: rgb(231, 227, 227);
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    outline: none;
+}
+.submit-button:hover{
+    background-color: rgb(57, 151, 57);
+    color: rgb(255, 254, 254);
+}
+
+input,
+button,
+select,
+textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+#email-label, #number-label, p{
+    margin-top: 1.5rem;
+}

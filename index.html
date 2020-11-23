@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="header">
+        <header id="title">
+            <h1>Survey Form</h1>
+        </header>
+        <p id="description">This is a survey form page I made. Thank you for taking a look!</p>
+    </div>
+    <div class="container">
+        <div class="form">
+            <form id="survey-form" >
+
+                <div class="form-group">
+                    <label id="name-label" for="name">Name</label>
+                    <input type="text" name="name" id="name" class="form-edit" placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email" id="email-label">Email</label>
+                    <input type="email" name="email" id="email" class="form-edit" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label id="number-label" for="number">Rate us</label>
+                    <input type="number" id="number" name="number" min="1" max="5" class="form-edit" placeholder="Rate us between 1 to 5" required>
+                </div>
+
+                <div class="form-group">
+                    <p>Which option best describes your currrent role ?</p>
+                    <select name="role" id="dropdown" class="form-edit" required>
+                        <option disabled selected value>Select current role</option>
+                        <option value="student">Student</option>
+                        <option value="job">Full Time Job</option>
+                        <option value="learner">Full Time Learner</option>
+                        <option value="preferNo">Prefer not to say</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <p>Would you recommend us to others:</p>
+                    <label>
+                        <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked />Definitely</label>
+                    <label>
+                        <input name="user-recommend" value="Maybe" type="radio" class="input-radio" />Maybe</label>
+                
+                    <label><input name="user-recommend" value="not-sure" type="radio" class="input-radio" />Not sure</label>
+                </div>
+
+                <div class="form-group">
+                    <p>What type of gaming platforms do you play on:</p>
+                    <label>
+                        <input name="prefer" value="PC" type="checkbox" class="input-checkbox" />PC
+                    </label>
+                    <label>
+                        <input name="prefer" value="Xbox" type="checkbox" class="input-checkbox" />Xbox
+                    </label>
+                    <label>
+                        <input name="prefer" value="PS" type="checkbox" class="input-checkbox" />PlayStation
+                    </label>
+                    <label>
+                        <input name="prefer" value="Nintendo" type="checkbox" class="input-checkbox" />Nintendo
+                    </label>
+                    <label>
+                        <input name="prefer" value="Mobile" type="checkbox" class="input-checkbox" />Mobile
+                    </label>
+                    <label>
+                        <input name="prefer" value="Others" type="checkbox" class="input-checkbox" />Others
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <p>Comments or Suggestions:</p>
+                    <textarea name="comment" class="input-textarea" id="comments" placeholder="Suggestions are highly appreciated"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <button type="submit" id="submit" class="submit-button">
+                        Submit
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <footer>
+            <h4>Photo by Zdeněk Macháček on Unsplash
+            </h4>
+        </footer>
+    </div>
+</body>
+</html>
